@@ -4,11 +4,9 @@ import java.util.Scanner;
 		public static void main(String[] args){
 			int[] numero = new int[5];
 			int soma=0;
-			Scanner entrada = new Scanner(System.in);
-			
 			for(int cont=0 ; cont< numero.length ; cont++){
 				System.out.print("Entre com o número "+(cont+1)+": ");
-				numero[cont]=entrada.nextInt();
+				numero[cont]=new Scanner(System.in).nextInt();
 			}
 			for(int cont : numero){
 				soma += cont;
